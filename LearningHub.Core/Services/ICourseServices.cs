@@ -5,14 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningHub.Core.Repository
+namespace LearningHub.Core.Services
 {
-    public interface ICourseRepository
-    {
-        //LIST GetAllCourses
+    public interface ICourseServices
+    {// ANY  busness logic code && l7ta nkhaly coll el function tshofum el UI 
 
         List<Course> GetAllCourses();
-//Course bec ana rah ab3et col el data, and we dont return any thing so we use void .
+        //Course bec ana rah ab3et col el data, and we dont return any thing so we use void .
         void CreateCourse(Course course);
         //AbandonedMutexException here the same thing 
         void UpdateCourse(Course course);

@@ -42,6 +42,7 @@ namespace LearningHub.Infra.Repository
             return result.FirstOrDefault();
         }
         public void CreateCourse(Course course) {
+//Mapping
             var p = new DynamicParameters();
             p.Add("course_name",course.Coursename,dbType:DbType.String,direction:ParameterDirection.Input);
             p.Add("catId",course.Categoryid,dbType:DbType.Int32,direction:ParameterDirection.Input);
